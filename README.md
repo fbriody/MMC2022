@@ -9,5 +9,5 @@ Participants will discover the generation of a linear regression line of best fi
 
 
 ## Quick Start Guide
-1. Step 1
+1. Step 1 and more
 2. Step 2
