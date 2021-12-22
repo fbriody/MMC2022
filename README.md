@@ -1,5 +1,5 @@
 # MMC2022
-Files for 2022 MMC Conference
+Files for 2022 Metropolitan Math Club of Chicago Conference
 
 ## Title
 The Linear Regression Process: From Generation to Interpretation
@@ -9,5 +9,5 @@ Participants will discover the generation of a linear regression line of best fi
 
 
 ## Quick Start Guide
-1. Download rc17.txt from [ISBE Data Library](https://www.isbe.net/Documents/rc17.zip).
-2. Copy and paste the code from import_rc17.txt into an R code chunk.
+1. Step 1
+2. Step 2
