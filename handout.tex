@@ -124,10 +124,52 @@
 
 \epigraph{Put quote here. There is only one large computer program I have used in which there are to a decent approximation 0 bugs: Don Knuth's TeX}{\textit{ -- Jaap Weel}}
 
+The Story\\
+A statistics teacher gives a quiz to a class. The scores were 2, 4, 6, 8, and 15 with one student being absent.
+
+
+
+%%%%%%%%%%%
+%Prequel%%%%
+%4_2_Notes_21%
+%%%%%%%%%%%
+\section{Standard Deviation: The Non-Resistant Measure of Spread}
+
+How much variability, on average, is there around the mean?
+
+\begin{table}[ht]
+\large
+%\centering
+\huge{%
+\begin{tabular*}{6cm}[h]{cccc}
+Score & Deviation & Squared Deviation & \hspace{1.5in} \\
+$x$ &  &  & \quad \\
+\cline{1-4}
+2 & \quad & \quad & \quad\\
+4 & \quad & \quad & \\
+6 & \quad & \quad & \\
+8 & \quad & \quad & \\
+15 & \quad & \quad &
+\end{tabular*}
+}
+\end{table}
+
+\newpage
+
+%%%%%%%%%%%
+%MAIN 1%%%%
+%5_2_Notes%
+%%%%%%%%%%%
+
+The Story\\
+A statistics teacher gives a quiz to a class. The scores were 2, 4, 6, 8, and 15 with one student absent.
+
+
+
 \section{Getting Least Squares Line of Best Fit} % (fold)
-\label{}
-\subsection{From Calculator}
-	\includegraphics[width=.15\textwidth]{img/5_scat}
+ % \label{}
+ % \subsection{From Calculator}
+ % 	\includegraphics[width=.15\textwidth]{img/5_scat}
 
 \subsection{From Summary Statistics} % (fold)
 \label{sub:from_summary_statistics}
@@ -153,5 +195,94 @@ Slope represents the  \textbf{predicted} change in response associated with each
 \subsubsection{Y-Intercept}
 Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y-intercept is useless.]
 % subsection interpretation (end)
+
+%%%%%%%%%%%
+%MAIN 2?%%%%
+%5_3_Notes%
+%%%%%%%%%%%
+
+\subsection{Predicted Values and Residuals}
+	%\centering
+	$\hat{y}=-2+3x$
+	\begin{table}[ht]
+	\large
+	%\centering
+	\begin{tabular*}{6cm}[h]{cccc}
+	Hours & Score & Predicted & Residual\\
+	$x$ & $y$ & $\hat{y}$ & $y-\hat{y}$\\
+	1 & 2 & \quad & \\
+	2 & 4 & \quad & \\
+	3 & 6 & \quad & \\
+	4 & 8 & \quad & \\
+	5 & 15 & \quad &
+	\end{tabular*}
+	\end{table}
+
+
+	\begin{itemize}
+		\item Predicted $\hat{y}$: substitute explanatory ($x$) values into regression equation.
+		\item Residual $y-\hat{y}$ (also called {\em regression error}); actual minus predicted.
+	\end{itemize}
+
+
+	%%%%%%%%%%%
+	%MAIN 3%%%%
+	%5_3_Notesp2%
+	%%%%%%%%%%%
+
+	\subsection{The Coefficient of Determination $r^2$} % (fold)
+	\label{sub:subsection_name}
+
+		%\includegraphics[width=1\textwidth]{img/5_RegOut.png}
+		\includegraphics{img/5_RegOut.png}
+		\begin{table}[ht]
+			\huge
+			%\centering
+			\begin{tabular*}{12cm}[h]{cc|c||cc||cc}
+			Hours & Score & Predicted & Error & $($Error$)^2$ & Residual &  $($Residual$)^2$\\
+			$x$ & $y$ & $\hat{y}$ & $y - \bar{y}$& $(y - \bar{y})^2$&  $y-\hat{y}$ &  $(y-\hat{y})^2$\\
+			1 & 2 & \quad & &&&\\
+			2 & 4 & \quad & &&&\\
+			3 & 6 & \quad & &&&\\
+			4 & 8 & \quad & &&&\\
+			5 & 15 & \quad & &&&
+			\end{tabular*}
+			\end{table}
+
+	% subsection subsection_name (end)
+
+	%%%%%%%%%%%
+	%MAIN 4%%%%
+	%5_3_Notes%
+	%%%%%%%%%%%
+
+	\section{Summary \& Examples} % (fold)
+	\label{}
+	\subsection{Getting $r$}
+	\begin{itemize}
+		\item $r = \frac{\Sigma z_x\cdot z_y}{n-1}$
+		\item Never calculate by hand; use calculator or computer output.
+		\item Know formula {\em properties}.
+	\end{itemize}
+	\includegraphics[width=.5\textwidth]{img/5_1_r_plot}\\
+	\begin{minipage}[T]{.45\textwidth}
+		\includegraphics[width=.35\textwidth]{img/5_r}
+	\end{minipage}
+	\begin{minipage}[T]{.45\textwidth}
+		{\bf Correlations: x, y }\\
+		\verb|Pearson correlation of x and y = 0.949|\\
+		\verb|P-Value = 0.014|
+	\end{minipage}
+	\vspace{1.5in}
+	\subsection{Five R Properties} % (fold)
+	\label{sub:5_r_properties}
+	\begin{itemize}
+		\item Examples
+	\end{itemize}
+	% subsection 5_r_properties (end)
+
+
+
+
 
 \end{document}
