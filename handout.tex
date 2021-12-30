@@ -1,5 +1,5 @@
 % !TEX encoding = UTF-8 Unicode
-\documentclass[9pt, oneside]{extarticle}     % use for two column: ,twocolumn
+\documentclass[hidelinks,9pt, oneside]{extarticle}     % use for two column: ,twocolumn
 \usepackage{hyperref}
 \usepackage{fancyvrb}
   \fvset{tabsize=4}%changes tab spacing in verbatim from 8 to 4
@@ -137,7 +137,7 @@ A statistics teacher gives a quiz to a class. The scores were 2, 4, 6, 8, and 15
 %Prequel%%%%
 %4_2_Notes_21%
 %%%%%%%%%%%
-\section{Standard Deviation: The Non-Resistant Measure of Spread}
+\section{Prologue: Standard Deviation}
 
 How much variability, on average, is there around the mean?
 
@@ -233,12 +233,12 @@ A statistics teacher gives a quiz to a class. The scores were 2, 4, 6, 8, and 15
 \verb|Total             4    100.000|\\
 
 \vspace{3in}
-\subsection{Interpretation} % (fold)
+\section{Interpretation} % (fold)
 \label{sub:interpretation}
-\subsubsection{Slope}
+\subsection{Slope}
 Slope represents the  \textbf{predicted} change in response associated with each unit increase in the explanatory variable, \textbf{on average}.\\[.25in]
-\subsubsection{Y-Intercept}
-Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y-intercept is useless.]
+\subsection{Y-Intercept}
+Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y-intercept is useless due to \textit{extrapolation}.]
 % subsection interpretation (end)
 
 
@@ -249,7 +249,7 @@ Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y
 %5_3_Notes%
 %%%%%%%%%%%
 
-\subsection{Predicted Values and Residuals}
+\section{Predicted Values and Residuals}
   %\centering
   $\hat{y}=-2+3x$
   \begin{table}[ht]
@@ -269,12 +269,12 @@ Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y
 
   \begin{itemize}
     \item Predicted $\hat{y}$: substitute explanatory ($x$) values into regression equation.
-    \item Residual $y-\hat{y}$ (also called {\em regression error}); actual minus predicted.
+    \item Residual $y-\hat{y}$ (also called {\em regression error}) CHECK THIS; actual minus predicted.
   \end{itemize}
 
 %use table to derive S.
 %topic to discuss: student: Is you rmodel precise/ (Notice not accurate).
-%4 bulls eye graphics happy, content, dangerous and sad 
+%4 bulls eye graphics happy, content, dangerous and sad
 %deviations for regression are VERTICAL and not nearest path
 %
 %need a plot to show vertical deviations
@@ -298,7 +298,7 @@ Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y
   }
 
 
-  \subsection{The Coefficient of Determination $r^2$ - Comparing Models} % (fold)
+  \section{The Coefficient of Determination $r^2$ - Comparing Models} % (fold)
   \label{sub:subsection_name}
 
     %\includegraphics[width=1\textwidth]{img/5_RegOut.png}
@@ -345,15 +345,16 @@ Y-intercept is the predicted value when the explanatory $(x)$ is 0. [Often the y
   %5_3_Notes%
   %%%%%%%%%%%
 
-  \section{Summary \& Examples} % (fold)
+  \section{The Correlation Coefficient $r$} % (fold)
   \label{}
   \subsection{Getting $r$}
   \begin{itemize}
-    \item $r = \frac{\Sigma z_x\cdot z_y}{n-1}$
+    \item {\Huge $r = \frac{\Sigma z_x\cdot z_y}{n-1}$}
     \item Never calculate by hand; use calculator or computer output.
     \item Know formula {\em properties}.
   \end{itemize}
-  \includegraphics[width=.5\textwidth]{img/5_1_r_plot}\\
+  \includegraphics[width=.8\textwidth]{img/5_1_r_plot}\\[.3in]
+
   \begin{minipage}[T]{.45\textwidth}
     \includegraphics[width=.35\textwidth]{img/5_r}
   \end{minipage}
